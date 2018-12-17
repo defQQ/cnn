@@ -118,7 +118,7 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
 
-        loss_mini.append(loss.item())
+        loss_mini.append(loss.data[0])
         _, predicted = torch.max(outputs.data, 1)
         total += labels.size(0)
         #correct += (predicted == target.cuda()).sum()
