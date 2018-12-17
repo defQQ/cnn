@@ -2,9 +2,6 @@
 import os
 import shutil
 
-# separate data
-# train:validation -> 8:2
-
 
 def split_data():
     train_ice_path = 'data/train/ice/'
